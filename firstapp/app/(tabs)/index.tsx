@@ -9,13 +9,13 @@ import { Link } from 'expo-router';
 
 export default function HomeScreen() {
 
-  const name = 'Kaan'
+  const name = 'Hayko Cepkin'
 
   return (
     <View style={styles.titleContainer} >
       <Text style={styles.font}>Eveeet Kimden Geliyor?</Text>
       <Text style={{ color: '#ffff00', fontSize: 30 }}>Eveeet Kimden Geliyor?</Text>
-      <Button title={name.toLowerCase()} onPress={() => { alert('deneme') }} />
+      <Button title='Tıkla' onPress={() => { alert(name) }} />
     </View>
   );
 }
