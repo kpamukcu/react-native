@@ -14,7 +14,7 @@ export default function App() {
 
       <Image source={require('./assets/web.webp')} style={styles.image} />
       <Image source={require('./assets/grafik.webp')} resizeMode='cover' style={styles.image} />
-      <ImageBackground source={require('./assets/back.avif')} style={styles.bg}>
+      <ImageBackground source={require('./assets/back.avif')} style={[styles.bg, {width:width, height:200}]}>
         <Text style={{ textAlign: 'center', color: '#fff', fontSize: 25 }}>Bu BackGround Görseldir</Text>
       </ImageBackground>
 
@@ -35,10 +35,10 @@ const styles = StyleSheet.create({
     height: '20%',
     marginVertical: 5
   },
-  bg:{
-    width:'100%',
-    height:200,
-    justifyContent:'center',
-    alignItems:'center'
+  bg: {
+    /* width: '100%', */
+    /* height:200, */
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 });
