@@ -8,7 +8,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Kaan Pamukcu ile React Native Dersleri</Text>
-      <Text>Ekran Ölçüleri: <Text>{Math.round(width)}px x {Math.round(height)}px</Text>  </Text>
+      <Text>Ekran Ölçüleri: <Text>{Math.round(width)}px x {Math.round(height)}px</Text></Text>
 
       <Image source={{ uri: 'https://aribilgi.com/wp-content/uploads/2020/09/cropped-logo-1.png.webp' }} style={styles.image} resizeMode='contain' />
 
