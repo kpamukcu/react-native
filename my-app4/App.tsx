@@ -12,7 +12,6 @@ export default function App() {
         </View>
       ))}
 
-
       <Image source={require('./assets/web.webp')} />
       <Image source={require('./assets/web.webp')} />
       <Image source={require('./assets/web.webp')} />
