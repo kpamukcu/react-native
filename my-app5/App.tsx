@@ -27,9 +27,6 @@ export default function App() {
         <Image source={require('./assets/dijital.webp')} style={styles.gap} />
       </ScrollView>
     </>
-
-
-
   );
 }
 
