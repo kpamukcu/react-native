@@ -36,6 +36,17 @@ export default function App() {
     )
   }
 
+  // const renderItem = ({ item }: { item: { id: string, urun: string, foto: string, desc: string } }) => (
+  //   <View style={styles.card}>
+  //     <Image source={{ uri: item.foto }} style={{ width: '100%', height: 250 }} />
+  //     <Text style={styles.text}>{item.urun}</Text>
+  //     <Text>{item.desc}</Text>
+  //     <TouchableOpacity style={styles.btn} onPress={addToCard}>
+  //       <Text style={{ color: '#fff' }}>Sepete Ekle</Text>
+  //     </TouchableOpacity>
+  //   </View>
+  // )
+
 
   return (
     <ScrollView nestedScrollEnabled>
