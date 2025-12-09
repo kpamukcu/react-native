@@ -1,10 +1,41 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+
+  const [count, setCount] = useState(0)
+  const [seconds, setSeconds] = useState(0)
+
+  useEffect(() => {
+    setInterval(() => { setSeconds(prev => prev + 1) }, 1000)
+  }, [])
+
+  /* 
+  Alternatif
+    useEffect(() => {
+
+    const intervalId = setInterval(() => { setSeconds(prev => prev + 1) }, 1000)
+    return () => clearInterval(intervalId)
+
+  }, [])  
+  */
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Button
+        title='Azalt'
+        onPress={() => setCount(a => a - 1)}
+      />
+
+      <Text>Sayaç: {count}</Text>
+
+      <Button
+        title='Arttır'
+        onPress={() => setCount(a => a + 1)}
+      />
+
+      <Text>{seconds}</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,7 +44,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
