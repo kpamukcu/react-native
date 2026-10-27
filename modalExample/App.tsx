@@ -123,7 +123,7 @@ export default function App() {
         </View>
         <View style={{ width: '70%' }}>
           <Text style={{ fontWeight: '600' }}>{item.baslik}</Text>
-          <Text style={{ textAlign: 'justify' }}>{item.aciklama.substring(0, 130)}</Text>
+          <Text style={{ textAlign: 'justify' }}>{item.aciklama}</Text>
         </View>
       </View>
     </TouchableOpacity>
